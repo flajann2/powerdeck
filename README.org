@@ -4,6 +4,13 @@
    Fred Mitchell
 
 ** Introduction
+   Streamdeck is a capable device, and the support for Linux
+   is simply not there. There is a Python version of the same
+   available, but limited in its capabilities.
+
+   I wish to strike out in a new direction for supporting
+   Streamdeck, to be more on a par with some of the functionality
+   available for it under Windows, at least, and beyond.
 
 ** Documentation
 

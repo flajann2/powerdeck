@@ -5,4 +5,12 @@
   intended for myself and no one else.
 
   You may find something useful here, but it is not gauranteed.
- 
+
+** Goals
+   + To be better than the Python version of the same for Linux
+   + To be more on a par with the Windows supported version
+   + To allow operation across multiple login accounts
+   + To allow for better management of the keys and their icons.
+
+
+

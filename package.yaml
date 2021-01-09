@@ -1,0 +1,48 @@
+name:                streamdeck-ui-hs
+version:             0.0.0.0
+github:              "flajann2/streamdeck-ui-hs"
+license:             MIT
+author:              "Fred Mitchell"
+maintainer:          "fred.mitchell@gmx.de"
+copyright:           "2021 Fred Mitchell"
+
+extra-source-files:
+- README.org
+- ChangeLog.org
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/flajann2/streamdeck-ui-hs#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+executables:
+  streamdeck-ui-hs:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - streamdeck-ui-hs
+
+tests:
+  streamdeck-ui-hs-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - streamdeck-ui-hs

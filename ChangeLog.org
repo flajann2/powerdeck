@@ -1,0 +1,3 @@
+* Changelog for streamdeck-ui-hs
+
+** Unreleased changes

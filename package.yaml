@@ -17,9 +17,11 @@ extra-source-files:
 description:         Please see the README on GitHub at <https://github.com/flajann2/streamdeck-ui-hs#readme>
 
 dependencies:
-  - base # >= 4.7 && < 5
-  - wx
-  - wxcore
+  - base >= 4.7 && < 5
+  - gi-gtk
+  #- gi-gtk-declarative
+  #- gi-gtk-declarative-app-simple
+  
 library:
   source-dirs: src
 

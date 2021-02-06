@@ -15,4 +15,8 @@
 ** Strategy
    We want to rely on a FRP framework. We must select one to best
    suit our needs. Then the rest will flow.
+** Well...
+*** Attempts 
+    + tried to set up emacs27 bit it failed famously, so back to 26
+      
 

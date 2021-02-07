@@ -18,16 +18,24 @@ description:         Please see the README on GitHub at <https://github.com/flaj
 
 dependencies:
   - base >= 4.7 && < 5
-  - gi-gtk
-  #- gi-gtk-declarative
-  #- gi-gtk-declarative-app-simple
+#  - wx
+  - reactive-banana
   
 library:
   source-dirs: src
 
 executables:
-  streamdeck-ui-hs:
-    main:                Main.hs
+  streamdeck-ui:
+    main:                Streamdeck-ui.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - streamdeck-ui-hs
+  streamdeck-daemon:
+    main:                Streamdeck-daemon.hs
     source-dirs:         app
     ghc-options:
     - -threaded

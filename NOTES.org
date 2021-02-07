@@ -18,5 +18,6 @@
 ** Well...
 *** Attempts 
     + tried to set up emacs27 bit it failed famously, so back to 26
-      
+    + Back to the distro emacs
+
 

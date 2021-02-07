@@ -5,23 +5,29 @@
 
 packages:
 - completed:
-    hackage: haskell-gi-0.24.7@sha256:d1cf3e64589c9c366228f8fe89d2d48207b3ca11b48966ef976fedfa679a819b,5241
+    hackage: reactive-banana-1.2.1.0@sha256:af0a41dec95e1478acd5280f0fdde51afddf9fbfa4e0a4c226a2c6fa65702796,3975
     pantry-tree:
-      size: 4348
-      sha256: c6db02339d61f70cfb687c7786c4441b9fa2658ce4b4aac19395f2e939ed8f1b
+      size: 2443
+      sha256: 367a55194ed03065dd7cf9e63c851ae4fe56f8533d07cdfe751fa68da9c7d66d
   original:
-    hackage: haskell-gi-0.24.7
+    hackage: reactive-banana-1.2.1.0
 - completed:
-    hackage: haskell-gi-base-0.24.5@sha256:f289ee14d99bc91daaf15a72533def379e1f5c6e51e9eff0d67e57912816ce74,2435
+    hackage: semigroups-0.18.5@sha256:41ef9f5f183f66c519c5cddcb3fbfdbc9b67a2b7bfae7d81f91de9ff7367d8c6,5828
     pantry-tree:
-      size: 1937
-      sha256: ddb1858a395755bb14438f39718df2f95042f492a55b6dc0f9343435f758613c
+      size: 533
+      sha256: 7fe152b45de8c6a929db10c68b0576e35f7054492c528e8aa10cb1af2fc80953
   original:
-    hackage: haskell-gi-base-0.24.5
+    hackage: semigroups-0.18.5
+- completed:
+    hackage: hashable-1.2.7.0@sha256:03b6836ca9cd3ad0e5a2f3cce989b001dd0e05f306a873db3196037adb30e0a4,5215
+    pantry-tree:
+      size: 1514
+      sha256: 901c4f10bcf6bda842b849950a2767c918f4ed59fa8885f7c945dd6c7e763332
+  original:
+    hackage: hashable-1.2.7.0
 snapshots:
 - completed:
-    size: 533053
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/28.yaml
-    sha256: a9c01d860ac8dfb3a1b6f7ec4a36dd9504a95392b89c99b0877da63fa36a8e97
-  original:
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/28.yaml
+    size: 532381
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/11.yaml
+    sha256: 1f43c4ad661a114a4f9dd4580988f30da1208d844c097714f5867c52a02e0aa1
+  original: lts-16.11

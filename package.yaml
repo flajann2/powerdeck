@@ -34,6 +34,8 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - streamdeck-ui-hs
+    - reactive-banana
+    
   streamdeck-daemon:
     main:                Streamdeck-daemon.hs
     source-dirs:         app
@@ -43,6 +45,7 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - streamdeck-ui-hs
+    - reactive-banana
 
 tests:
   streamdeck-ui-hs-test:

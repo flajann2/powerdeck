@@ -18,3 +18,4 @@ extra-deps:
   - semigroups-0.18.5
   - text-1.2.4.1
   - hashable-1.2.7.0
+#  - d-bus-0.1.8

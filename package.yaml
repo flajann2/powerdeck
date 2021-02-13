@@ -35,6 +35,7 @@ executables:
     dependencies:
     - streamdeck-ui-hs
     - reactive-banana
+#    - d-bus
     
   streamdeck-daemon:
     main:                Streamdeck-daemon.hs
@@ -46,6 +47,8 @@ executables:
     dependencies:
     - streamdeck-ui-hs
     - reactive-banana
+    - hidapi
+#    - d-bus
 
 tests:
   streamdeck-ui-hs-test:

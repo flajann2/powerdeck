@@ -19,5 +19,13 @@
 *** Attempts 
     + tried to set up emacs27 bit it failed famously, so back to 26
     + Back to the distro emacs
+    + I am going to attempt to cut back everything in the stack.yaml,
+      then add things one at a time as I need them, and if I need to,
+      I will clone the libraries that I can't get to work any other
+      way and make it work for my purposes.
 
+      In this way, I can still make progress, even if it will take me
+      longer. The benefit is that I will have made current
+      those libraries I need. And I can eventually release them under
+      new names.
 

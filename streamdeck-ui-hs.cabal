@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 21d0acb8c1a9b08ab03c19370451439bd03a46093ca10fd5b56a949a32be02b3
+-- hash: 03e6e298d4d48517369a1c50786530509b29c4e96d6f4d2b3e70a75972732c27
 
 name:           streamdeck-ui-hs
 version:        0.0.0.0
@@ -48,6 +48,7 @@ executable foo
       base >=4.7 && <5
     , reactive-banana
     , streamdeck-ui-hs
+    , wx
   default-language: Haskell2010
 
 executable streamdeck-daemon

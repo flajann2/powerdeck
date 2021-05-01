@@ -5,12 +5,12 @@
 
 packages:
 - completed:
-    hackage: reactive-banana-1.2.1.0@sha256:af0a41dec95e1478acd5280f0fdde51afddf9fbfa4e0a4c226a2c6fa65702796,3975
+    hackage: reflex-0.8.0.0@sha256:e50de03568818072e2811211431ffe9811aeed69f3b24104b1dafb1b6fd0a525,11942
     pantry-tree:
-      size: 2443
-      sha256: 367a55194ed03065dd7cf9e63c851ae4fe56f8533d07cdfe751fa68da9c7d66d
+      size: 4587
+      sha256: 41a690372195eecda7bc9631a3724bc8a60a47a765e5c4e7a7ef8bdaf6a6eae9
   original:
-    hackage: reactive-banana-1.2.1.0
+    hackage: reflex-0.8.0.0
 - completed:
     hackage: d-bus-0.1.8@sha256:7501bbb1749b7e778d5516e8d9498cb2ce8725bd66c32f01fcd77ec22d080b4d,4263
     pantry-tree:
@@ -19,22 +19,71 @@ packages:
   original:
     hackage: d-bus-0.1.8
 - completed:
-    hackage: hashable-1.2.7.0@sha256:03b6836ca9cd3ad0e5a2f3cce989b001dd0e05f306a873db3196037adb30e0a4,5215
+    hackage: fltkhs-0.8.0.3@sha256:90046b0e95d6859aafe0d333876ced95f71f73e5c43173d5a64189350b461b5d,14196
     pantry-tree:
-      size: 1514
-      sha256: 901c4f10bcf6bda842b849950a2767c918f4ed59fa8885f7c945dd6c7e763332
+      size: 34926
+      sha256: 6538e350bf1633d4b846c7b0fdab33efe8526cefa8d2b21ab5e10033a4175cd1
   original:
-    hackage: hashable-1.2.7.0
+    hackage: fltkhs-0.8.0.3
 - completed:
-    hackage: semigroups-0.18.5@sha256:41ef9f5f183f66c519c5cddcb3fbfdbc9b67a2b7bfae7d81f91de9ff7367d8c6,5828
+    hackage: constraints-extras-0.3.0.2@sha256:013b8d0392582c6ca068e226718a4fe8be8e22321cc0634f6115505bf377ad26,1853
     pantry-tree:
-      size: 533
-      sha256: 7fe152b45de8c6a929db10c68b0576e35f7054492c528e8aa10cb1af2fc80953
+      size: 594
+      sha256: 3ce1012bfb02e4d7def9df19ce80b8cd2b472c691b25b181d9960638673fecd1
   original:
-    hackage: semigroups-0.18.5
+    hackage: constraints-extras-0.3.0.2
+- completed:
+    hackage: dependent-map-0.4.0.0@sha256:ca2b131046f4340a1c35d138c5a003fe4a5be96b14efc26291ed35fd08c62221,1657
+    pantry-tree:
+      size: 551
+      sha256: 5defa30010904d2ad05a036f3eaf83793506717c93cbeb599f40db1a3632cfc5
+  original:
+    hackage: dependent-map-0.4.0.0
+- completed:
+    hackage: dependent-sum-0.7.1.0@sha256:5599aa89637db434431b1dd3fa7c34bc3d565ee44f0519bfbc877be1927c2531,2068
+    pantry-tree:
+      size: 290
+      sha256: 9cbfb32b5a8a782b7a1c941803fd517633cb699159b851c1d82267a9e9391b50
+  original:
+    hackage: dependent-sum-0.7.1.0
+- completed:
+    hackage: monoidal-containers-0.6.0.1@sha256:ffdfae0fde7a08e9e314667a78d86454d2d23137d85f226ec6e757c190fb28ad,2583
+    pantry-tree:
+      size: 569
+      sha256: 61d5a73cb768aa4d59db7365418a2fc1bb24b8c3e53ca496372656b6ba4d31ab
+  original:
+    hackage: monoidal-containers-0.6.0.1
+- completed:
+    hackage: patch-0.0.3.2@sha256:b4d3a60db88a04030392a06076defb9fe310a79577df7ff63ea2bb0298817b8d,2452
+    pantry-tree:
+      size: 977
+      sha256: b9ab71b93cdff84a75c9d251513b4d64a9fea5b89526ecbec60eb9ae04521478
+  original:
+    hackage: patch-0.0.3.2
+- completed:
+    hackage: prim-uniq-0.2@sha256:7bfd8a729812bf212610b63459b76a086ecd5ce48f48d785c288e082d055d47b,1403
+    pantry-tree:
+      size: 464
+      sha256: aa27fb2f22141bd9bb474091f811badd9c71c52a1504fb81834aeb28cecff626
+  original:
+    hackage: prim-uniq-0.2
+- completed:
+    hackage: ref-tf-0.4.0.2@sha256:69de3550250e0cd69f45d080359cb314a9487c915024349c75b78732bbee9332,1134
+    pantry-tree:
+      size: 211
+      sha256: fc5a4a35b4c782a33f452c1dc66ffa8ddbf321e2db369bd8823c796f0d4d8c7f
+  original:
+    hackage: ref-tf-0.4.0.2
+- completed:
+    hackage: witherable-0.3.5@sha256:6590a15735b50ac14dcc138d4265ff1585d5f3e9d3047d5ebc5abf4cd5f50084,1476
+    pantry-tree:
+      size: 271
+      sha256: b99f21dbac28da031eb7c787fbffbe5e77e0aee42b64b5dda082470e907d5ab5
+  original:
+    hackage: witherable-0.3.5
 snapshots:
 - completed:
-    size: 563099
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/17/2.yaml
-    sha256: 92b1a17e31d0a978fca4bf270305d4d1dd8092271bf60eafbc9349c890854026
-  original: lts-17.2
+    size: 532381
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/11.yaml
+    sha256: 1f43c4ad661a114a4f9dd4580988f30da1208d844c097714f5867c52a02e0aa1
+  original: lts-16.11

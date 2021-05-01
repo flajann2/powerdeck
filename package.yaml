@@ -18,8 +18,7 @@ description:         Please see the README on GitHub at <https://github.com/flaj
 
 dependencies:
   - base >= 4.7 && < 5
-#  - wx
-  - reactive-banana
+  - reflex
   
 library:
   source-dirs: src
@@ -34,7 +33,7 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - streamdeck-ui-hs
-    - reactive-banana
+    - reflex
     
   streamdeck-ui:
     main:                Streamdeck-ui.hs
@@ -45,8 +44,9 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - streamdeck-ui-hs
-    - reactive-banana
+    - reflex
     - d-bus
+    - fltkhs
     
   streamdeck-daemon:
     main:                Streamdeck-daemon.hs
@@ -57,7 +57,7 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - streamdeck-ui-hs
-    - reactive-banana
+    - reflex
 #    - hidapi
 #    - d-bus
 

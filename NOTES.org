@@ -1,8 +1,8 @@
 * My personal notes for streamdeck-ui-hs
-  These are my personal notes for this
-  project. They are not promised to be
-  uptodate or even accurate. They are only
-  intended for myself and no one else.
+  These are my personal notes for this project. They
+  are not promised to be uptodate or even
+  accurate. They are only intended for myself and no
+  one else.
 
   You may find something useful here, but it is not gauranteed.
 
@@ -15,17 +15,19 @@
 ** Strategy
    We want to rely on a FRP framework. We must select one to best
    suit our needs. Then the rest will flow.
-** Well...
+
 *** Attempts 
-    + tried to set up emacs27 bit it failed famously, so back to 26
+    + tried to set up emacs27 bit it failed famously,
+      so back to 26
     + Back to the distro emacs
-    + I am going to attempt to cut back everything in the stack.yaml,
-      then add things one at a time as I need them, and if I need to,
-      I will clone the libraries that I can't get to work any other
-      way and make it work for my purposes.
+    + I am going to attempt to cut back everything in
+      the stack.yaml, then add things one at a time as
+      I need them, and if I need to, I will clone the
+      libraries that I can't get to work any other way
+      and make it work for my purposes.
 
-      In this way, I can still make progress, even if it will take me
-      longer. The benefit is that I will have made current
-      those libraries I need. And I can eventually release them under
-      new names.
-
+      In this way, I can still make progress, even if
+      it will take me longer. The benefit is that I
+      will have made current those libraries I
+      need. And I can eventually release them under new
+      names.

@@ -18,22 +18,22 @@ description:         Please see the README on GitHub at <https://github.com/flaj
 
 dependencies:
   - base >= 4.7 && < 5
-  - reflex
+  #- reflex
   
 library:
   source-dirs: src
 
 executables:
-  foo:
-    main:                Asteroids.hs
-    source-dirs:         examples
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - streamdeck-ui-hs
-    - reflex
+  #foo:
+  #  main:                Asteroids.hs
+  #  source-dirs:         examples
+  #  ghc-options:
+  #  - -threaded
+  #  - -rtsopts
+  #  - -with-rtsopts=-N
+  #  dependencies:
+  #  - streamdeck-ui-hs
+  #  #- reflex
     
   streamdeck-ui:
     main:                Streamdeck-ui.hs
@@ -44,9 +44,9 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - streamdeck-ui-hs
-    - reflex
-    - d-bus
-    - fltkhs
+    #- reflex
+    - dbus
+    #- fltkhs
     
   streamdeck-daemon:
     main:                Streamdeck-daemon.hs
@@ -57,9 +57,9 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - streamdeck-ui-hs
-    - reflex
-#    - hidapi
-#    - d-bus
+    #- reflex
+    - hidapi
+    - dbus
 
 tests:
   streamdeck-ui-hs-test:

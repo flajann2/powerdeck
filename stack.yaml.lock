@@ -5,19 +5,19 @@
 
 packages:
 - completed:
-    hackage: reflex-0.8.0.0@sha256:e50de03568818072e2811211431ffe9811aeed69f3b24104b1dafb1b6fd0a525,11942
+    hackage: reflex-0.8.1.0@sha256:9921c12b19950a3d07b4253b3bc9068d59b3d7c82f637a62f5546c81c1a1be46,11932
     pantry-tree:
       size: 4587
-      sha256: 41a690372195eecda7bc9631a3724bc8a60a47a765e5c4e7a7ef8bdaf6a6eae9
+      sha256: c1d4d6608710d3a830568bf8543dda0c24e417344bcda26669ca7ad0667a0d58
   original:
-    hackage: reflex-0.8.0.0
+    hackage: reflex-0.8.1.0
 - completed:
-    hackage: d-bus-0.1.8@sha256:7501bbb1749b7e778d5516e8d9498cb2ce8725bd66c32f01fcd77ec22d080b4d,4263
+    hackage: dbus-1.2.21@sha256:66829ceff7b0e6f99db5d84381b156c2de32dc594d3eea8a3d804c166ed5b3c9,5095
     pantry-tree:
-      size: 1474
-      sha256: 80172f6d6fcc8e9fdac4e8dce745521b7e0b788596c34f12632151ca08aad2c2
+      size: 2795
+      sha256: 7fbaca6fb903797a57be957e80613a708677c14b47e643d79c4b5e488edc9f04
   original:
-    hackage: d-bus-0.1.8
+    hackage: dbus-1.2.21
 - completed:
     hackage: fltkhs-0.8.0.3@sha256:90046b0e95d6859aafe0d333876ced95f71f73e5c43173d5a64189350b461b5d,14196
     pantry-tree:
@@ -26,54 +26,12 @@ packages:
   original:
     hackage: fltkhs-0.8.0.3
 - completed:
-    hackage: constraints-extras-0.3.0.2@sha256:013b8d0392582c6ca068e226718a4fe8be8e22321cc0634f6115505bf377ad26,1853
+    hackage: constraints-extras-0.3.1.0@sha256:c70fcf437e1d640cfd50a8eda1db47a64e49c96857e08fd0d8c438327d908ac1,1846
     pantry-tree:
-      size: 594
-      sha256: 3ce1012bfb02e4d7def9df19ce80b8cd2b472c691b25b181d9960638673fecd1
+      size: 595
+      sha256: f29920355b21ef7a7218573591aa740b01b3d1fb3b0bbd66e2f726d091d56fb2
   original:
-    hackage: constraints-extras-0.3.0.2
-- completed:
-    hackage: dependent-map-0.4.0.0@sha256:ca2b131046f4340a1c35d138c5a003fe4a5be96b14efc26291ed35fd08c62221,1657
-    pantry-tree:
-      size: 551
-      sha256: 5defa30010904d2ad05a036f3eaf83793506717c93cbeb599f40db1a3632cfc5
-  original:
-    hackage: dependent-map-0.4.0.0
-- completed:
-    hackage: dependent-sum-0.7.1.0@sha256:5599aa89637db434431b1dd3fa7c34bc3d565ee44f0519bfbc877be1927c2531,2068
-    pantry-tree:
-      size: 290
-      sha256: 9cbfb32b5a8a782b7a1c941803fd517633cb699159b851c1d82267a9e9391b50
-  original:
-    hackage: dependent-sum-0.7.1.0
-- completed:
-    hackage: monoidal-containers-0.6.0.1@sha256:ffdfae0fde7a08e9e314667a78d86454d2d23137d85f226ec6e757c190fb28ad,2583
-    pantry-tree:
-      size: 569
-      sha256: 61d5a73cb768aa4d59db7365418a2fc1bb24b8c3e53ca496372656b6ba4d31ab
-  original:
-    hackage: monoidal-containers-0.6.0.1
-- completed:
-    hackage: patch-0.0.3.2@sha256:b4d3a60db88a04030392a06076defb9fe310a79577df7ff63ea2bb0298817b8d,2452
-    pantry-tree:
-      size: 977
-      sha256: b9ab71b93cdff84a75c9d251513b4d64a9fea5b89526ecbec60eb9ae04521478
-  original:
-    hackage: patch-0.0.3.2
-- completed:
-    hackage: prim-uniq-0.2@sha256:7bfd8a729812bf212610b63459b76a086ecd5ce48f48d785c288e082d055d47b,1403
-    pantry-tree:
-      size: 464
-      sha256: aa27fb2f22141bd9bb474091f811badd9c71c52a1504fb81834aeb28cecff626
-  original:
-    hackage: prim-uniq-0.2
-- completed:
-    hackage: ref-tf-0.4.0.2@sha256:69de3550250e0cd69f45d080359cb314a9487c915024349c75b78732bbee9332,1134
-    pantry-tree:
-      size: 211
-      sha256: fc5a4a35b4c782a33f452c1dc66ffa8ddbf321e2db369bd8823c796f0d4d8c7f
-  original:
-    hackage: ref-tf-0.4.0.2
+    hackage: constraints-extras-0.3.1.0
 - completed:
     hackage: witherable-0.3.5@sha256:6590a15735b50ac14dcc138d4265ff1585d5f3e9d3047d5ebc5abf4cd5f50084,1476
     pantry-tree:
@@ -83,7 +41,7 @@ packages:
     hackage: witherable-0.3.5
 snapshots:
 - completed:
-    size: 532381
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/11.yaml
-    sha256: 1f43c4ad661a114a4f9dd4580988f30da1208d844c097714f5867c52a02e0aa1
-  original: lts-16.11
+    size: 567675
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/17/13.yaml
+    sha256: 84fa3ab606af79b1239ec213e8db5d49e4857f461eda9ac61fe589c967643b7d
+  original: lts-17.13

@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 1edacd84c6c394a8630f66ac8bd5f76b32d5bead03b9d3ff1f18941598cdab1e
+-- hash: 8059f0757f6e651f8920227ab554fc1ab61da9f0c55680cbe8dc35626199ecbc
 
 name:           streamdeck-ui-hs
 version:        0.0.0.0
@@ -34,20 +34,6 @@ library
       src
   build-depends:
       base >=4.7 && <5
-    , reflex
-  default-language: Haskell2010
-
-executable foo
-  main-is: Asteroids.hs
-  other-modules:
-      Paths_streamdeck_ui_hs
-  hs-source-dirs:
-      examples
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      base >=4.7 && <5
-    , reflex
-    , streamdeck-ui-hs
   default-language: Haskell2010
 
 executable streamdeck-daemon
@@ -59,7 +45,8 @@ executable streamdeck-daemon
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , reflex
+    , dbus
+    , hidapi
     , streamdeck-ui-hs
   default-language: Haskell2010
 
@@ -72,9 +59,7 @@ executable streamdeck-ui
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , d-bus
-    , fltkhs
-    , reflex
+    , dbus
     , streamdeck-ui-hs
   default-language: Haskell2010
 
@@ -88,6 +73,5 @@ test-suite streamdeck-ui-hs-test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , reflex
     , streamdeck-ui-hs
   default-language: Haskell2010

@@ -24,17 +24,18 @@ library:
   source-dirs: src
 
 executables:
-  #foo:
-  #  main:                Asteroids.hs
-  #  source-dirs:         examples
-  #  ghc-options:
-  #  - -threaded
-  #  - -rtsopts
-  #  - -with-rtsopts=-N
-  #  dependencies:
-  #  - streamdeck-ui-hs
-  #  #- reflex
-    
+  foo:
+    main:                dbusdump.hs
+    source-dirs:         examples
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - streamdeck-ui-hs
+    - hidapi
+    - dbus
+   
   streamdeck-ui:
     main:                Streamdeck-ui.hs
     source-dirs:         app

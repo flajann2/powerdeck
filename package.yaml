@@ -24,7 +24,19 @@ library:
   source-dirs: src
 
 executables:
-  foo:
+  test-hid:
+    main:                test-hid.hs
+    source-dirs:         examples
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - streamdeck-ui-hs
+    - hidapi
+    - dbus
+ 
+  test-dbus:
     main:                dbusdump.hs
     source-dirs:         examples
     ghc-options:

@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: d3f44ed5f53818939021e3641d3fa2be49ebc2d702776703eab76efeae2193d4
+-- hash: 6723ae6f201f49ac06d9513bd983633559c12d99a46e2f14fcb94af17b7e5af7
 
 name:           streamdeck-ui-hs
 version:        0.0.0.0
@@ -36,20 +36,6 @@ library
       base >=4.7 && <5
   default-language: Haskell2010
 
-executable foo
-  main-is: dbusdump.hs
-  other-modules:
-      Paths_streamdeck_ui_hs
-  hs-source-dirs:
-      examples
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      base >=4.7 && <5
-    , dbus
-    , hidapi
-    , streamdeck-ui-hs
-  default-language: Haskell2010
-
 executable streamdeck-daemon
   main-is: Streamdeck-daemon.hs
   other-modules:
@@ -74,6 +60,34 @@ executable streamdeck-ui
   build-depends:
       base >=4.7 && <5
     , dbus
+    , streamdeck-ui-hs
+  default-language: Haskell2010
+
+executable test-dbus
+  main-is: dbusdump.hs
+  other-modules:
+      Paths_streamdeck_ui_hs
+  hs-source-dirs:
+      examples
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , dbus
+    , hidapi
+    , streamdeck-ui-hs
+  default-language: Haskell2010
+
+executable test-hid
+  main-is: test-hid.hs
+  other-modules:
+      Paths_streamdeck_ui_hs
+  hs-source-dirs:
+      examples
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , dbus
+    , hidapi
     , streamdeck-ui-hs
   default-language: Haskell2010
 

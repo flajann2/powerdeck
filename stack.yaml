@@ -9,3 +9,4 @@ extra-deps:
   - reflex-0.8.1.0
   - dbus-1.2.21
   - fltkhs-0.8.0.3
+  - bytestring-0.10.12.0

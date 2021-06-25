@@ -5,6 +5,7 @@ module Main where
 
 import qualified System.HIDAPI as H
 import Text.Printf
+import qualified Data.ByteString as B
 
 main = do
   H.init
@@ -30,7 +31,6 @@ main = do
     hvendor = 0x0fd9 :: H.VendorID
     keyread d = do
       printf ">>> waiting for key \n"
-      bs <- H.read d 32
-      printf "   Read %d bytes: \n" length(bs)
-      print bs
+      bs <- H.read d 36
+      mapM_ print (B.unpack bs)
       keyread d

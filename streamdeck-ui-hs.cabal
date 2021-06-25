@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 6723ae6f201f49ac06d9513bd983633559c12d99a46e2f14fcb94af17b7e5af7
+-- hash: 8306f257aadae4ffd77c0e78a41e73c620b97872059c2e125d6e51a4cf56323d
 
 name:           streamdeck-ui-hs
 version:        0.0.0.0
@@ -86,6 +86,7 @@ executable test-hid
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bytestring
     , dbus
     , hidapi
     , streamdeck-ui-hs

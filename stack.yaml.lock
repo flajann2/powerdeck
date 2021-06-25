@@ -25,6 +25,13 @@ packages:
       sha256: 6538e350bf1633d4b846c7b0fdab33efe8526cefa8d2b21ab5e10033a4175cd1
   original:
     hackage: fltkhs-0.8.0.3
+- completed:
+    hackage: bytestring-0.10.12.0@sha256:3756939e46a9adb9cd5654442e7a44f53d0ad94fca8a9ad7029cc28fa6b0a081,6070
+    pantry-tree:
+      size: 2140
+      sha256: 4e979f335e85ccb677f171f1e8e4d1139c8bc4e3ace7fb1fdf9bdffe9b0d9287
+  original:
+    hackage: bytestring-0.10.12.0
 snapshots:
 - completed:
     size: 567675

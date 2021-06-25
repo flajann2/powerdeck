@@ -35,6 +35,7 @@ executables:
     - streamdeck-ui-hs
     - hidapi
     - dbus
+    - bytestring
  
   test-dbus:
     main:                dbusdump.hs

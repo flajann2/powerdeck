@@ -1,10 +1,9 @@
 -- testing the hidapi
 {-# LANGUAGE DataKinds #-}
+{-# LANGUAGE RankNTypes #-}
 module Main where
 
 import qualified System.HIDAPI as H
--- Bus 001 Device 010: ID 0fd9:006c Elgato Systems GmbH Stream Deck XL
-
  
 main = do
   H.init
@@ -16,8 +15,14 @@ main = do
 
   putStrLn ">> Just Egalto Streamdeck(s):"
   mapM_ print devinfo
+  if length(devinfo) > 0
+    then do
+      putStrLn ">> Streamdeck discovered. Doing button test."
+      keyread (head(devinfo))
+    else putStrLn ">> No Streamdecks found."
   H.exit
   
   where  
     hvendor = 0x0fd9 :: H.VendorID
-
+    keyread d = do
+      print d

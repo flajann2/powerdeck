@@ -14,7 +14,7 @@
 
 ** Strategy
    We want to rely on a FRP framework. We must select one to best
-   suit our needs. Then the rest will flow.
+   suit our needs. Then the rest will flow.   
 
 *** Attempts 
     + tried to set up emacs27 bit it failed famously,
@@ -31,3 +31,20 @@
       will have made current those libraries I
       need. And I can eventually release them under new
       names.
+    + The attempt worked, and now I have dbus and hidapi
+      working. The rest should be cakewalk
+
+*** Reverse Engineering the Python
+    I am looking at the Python library to the Stream Deck, and well
+    the code could be better, but so be it. It sort of works for
+    StreamDeck, and better than no code at all for Linux.
+
+    It's very object oriented, and the temptation is to simply
+    copy it's API into Haskell. I want to give some thoughts as
+    to how this should work.
+
+    Also, it is not clear to me how events are handled in the Python
+    code. If I didn't know any better, it's polling StreamDeck
+    for a change of state, which would be lame. But we need to
+    understand that and also work out the FRP bit before
+    we start out design/architecture for Haskell.

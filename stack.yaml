@@ -1,12 +1,6 @@
 resolver: lts-17.13
-#resolver: lts-17.10
-#resolver: lts-17.2
-#resolver: lts-16.31
-#resolver: lts-16.11
-#resolver: lts-15.3
-#resolver: lts-13.19
 
-allow-newer: true
+#allow-newer: true
 
 packages:
 - .
@@ -15,15 +9,3 @@ extra-deps:
   - reflex-0.8.1.0
   - dbus-1.2.21
   - fltkhs-0.8.0.3
-  # dependencies
-  - constraints-extras-0.3.1.0
-  #- dependent-map-0.4.0.0
-  #- dependent-sum-0.7.1.0
-  #- monoidal-containers-0.6.0.1
-  #- patch-0.0.4.0
-  #- prim-uniq-0.2
-  #- ref-tf-0.4.0.2
-  #- witherable-0.3.5
-  #- witherable-class-0.0.1
-  #- some-1.0.2
-  #- base-4.13.0.0

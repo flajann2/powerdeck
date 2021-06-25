@@ -18,11 +18,17 @@ main = do
   if length(devinfo) > 0
     then do
       putStrLn ">> Streamdeck discovered. Doing button test."
-      keyread (head(devinfo))
+      dev <- H.openDeviceInfo (head(devinfo))
+      H.setBlocking dev True
+      keyread dev
+      H.close dev
     else putStrLn ">> No Streamdecks found."
   H.exit
   
   where  
     hvendor = 0x0fd9 :: H.VendorID
     keyread d = do
-      print d
+      putStrLn ">>> waiting for key"
+      bs <- H.read d 32
+      print bs
+      keyread d

@@ -1,6 +1,6 @@
 resolver: lts-17.13
 
-#allow-newer: true
+allow-newer: true
 
 packages:
 - .

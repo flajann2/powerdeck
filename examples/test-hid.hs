@@ -1,4 +1,7 @@
 -- testing the hidapi
+-- Note that this must be run as root for it to intercept
+-- keypress events from the Streamdeck.
+
 {-# LANGUAGE DataKinds #-}
 {-# LANGUAGE RankNTypes #-}
 module Main where

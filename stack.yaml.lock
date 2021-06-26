@@ -32,6 +32,13 @@ packages:
       sha256: 4e979f335e85ccb677f171f1e8e4d1139c8bc4e3ace7fb1fdf9bdffe9b0d9287
   original:
     hackage: bytestring-0.10.12.0
+- completed:
+    hackage: Yampa-0.13.1@sha256:4612a2646c27bcd3ac55c90dbc34249303e28aa5b3bc3e0c6fa9ce58b889843c,5436
+    pantry-tree:
+      size: 4039
+      sha256: 2ebdfafc0143a66132e1f790fc3909c93654ee89fbe468574c5c2a36070dc6b3
+  original:
+    hackage: Yampa-0.13.1
 snapshots:
 - completed:
     size: 567675

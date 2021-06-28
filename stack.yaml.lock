@@ -39,6 +39,20 @@ packages:
       sha256: 2ebdfafc0143a66132e1f790fc3909c93654ee89fbe468574c5c2a36070dc6b3
   original:
     hackage: Yampa-0.13.1
+- completed:
+    hackage: gi-gtk-declarative-0.7.0@sha256:7e6318ad162a97dc19af79499eb7bbb72022aa4ac3368e8a20fa199a7e8db2c6,4417
+    pantry-tree:
+      size: 2393
+      sha256: eba1ca9b183eabe6f6b3ab2be9250428c97d2982d303f7abc0a431e5eaada73f
+  original:
+    hackage: gi-gtk-declarative-0.7.0
+- completed:
+    hackage: gi-gtk-declarative-app-simple-0.7.0@sha256:bc14f7cee5b933ce448f7ff5af13bd2cf63c657426003a8b41457556997ac39f,2276
+    pantry-tree:
+      size: 310
+      sha256: 06ceda071cbb81f20e41a3ac1d7291d63b040aacce428817c31a6aea8ca94c2d
+  original:
+    hackage: gi-gtk-declarative-app-simple-0.7.0
 snapshots:
 - completed:
     size: 585393

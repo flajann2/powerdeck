@@ -12,5 +12,6 @@ extra-deps:
   - fltkhs-0.8.0.3
   - bytestring-0.10.12.0
   - Yampa-0.13.1
-
+  - gi-gtk-declarative-0.7.0
+  - gi-gtk-declarative-app-simple-0.7.0
 

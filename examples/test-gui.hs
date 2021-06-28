@@ -1,32 +1,96 @@
 -- Test of GUI and Yampa FRP
+-- {-# LANGUAGE OverloadedStrings, OverloadedLabels #-}
 
-{-# LANGUAGE OverloadedStrings, OverloadedLabels #-}
+-- module Main where
+-- 
+-- import qualified GI.Gtk as Gtk
+-- import Data.GI.Base
+-- import Lib
+-- 
+-- main :: IO ()
+-- main = do
+--  Gtk.init Nothing
+--  win <- new Gtk.Window [ #title := "Hi there" ]
+--  on win #destroy Gtk.mainQuit
+--  button <- new Gtk.Button [ #label := "Click me" ]
+--  on button #clicked (set button [ #sensitive := False,
+--                                   #label := "Thanks for clicking me" ])
+--  #add win button
+--  #showAll win
+--  Gtk.main
+{-# LANGUAGE OverloadedLabels  #-}
+{-# LANGUAGE OverloadedLists   #-}
+{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE RecordWildCards   #-}
+
 module Main where
 
-import Lib
+import           Control.Monad                  ( void )
+import           Data.Text                      ( pack )
+import           GI.Gtk                         ( Button(..)
+                                                , Grid(..)
+                                                , Label(..)
+                                                , Window(..)
+                                                )
+import           GI.Gtk.Declarative
+import           GI.Gtk.Declarative.App.Simple
+import           GI.Gtk.Declarative.Container.Grid
 
-{- cabal:
-build-depends: base, haskell-gi-base, gi-gtk == 3.0.*
--}
+data State =
+  State
 
-import qualified GI.Gtk as Gtk
-import Data.GI.Base
+data Event =
+  Closed
+
+view' :: State -> AppView Window Event
+view' State =
+  bin
+      Window
+      [ #title := "Grid"
+      , on #deleteEvent (const (True, Closed))
+      , #widthRequest := 400
+      , #heightRequest := 300
+      ]
+    $ container
+        Grid
+        [#rowSpacing := 4, #columnSpacing := 4, #margin := 4]
+        [ GridChild
+          { properties = defaultGridChildProperties { width = 3, height = 3 }
+          , child      = widget Button [#label := "A", #vexpand := True]
+          }
+        , GridChild
+          { properties = defaultGridChildProperties { width      = 3
+                                                    , height     = 1
+                                                    , leftAttach = 3
+                                                    }
+          , child = widget Button
+                           [#label := "B", #hexpand := True, #vexpand := True]
+          }
+        , GridChild
+          { properties = defaultGridChildProperties { width      = 2
+                                                    , height     = 2
+                                                    , leftAttach = 3
+                                                    , topAttach  = 1
+                                                    }
+          , child = widget Button
+                           [#label := "C", #hexpand := True, #vexpand := True]
+          }
+        , GridChild
+          { properties = defaultGridChildProperties { width      = 1
+                                                    , height     = 1
+                                                    , leftAttach = 5
+                                                    , topAttach  = 2
+                                                    }
+          , child      = widget Button [#label := "D"]
+          }
+        ]
+
+update' :: State -> Event -> Transition State Event
+update' State Closed = Exit
 
 main :: IO ()
-main = do
-  Gtk.init Nothing
-
-  win <- new Gtk.Window [ #title := "Hi there" ]
-
-  on win #destroy Gtk.mainQuit
-
-  button <- new Gtk.Button [ #label := "Click me" ]
-
-  on button #clicked (set button [ #sensitive := False,
-                                   #label := "Thanks for clicking me" ])
-
-  #add win button
-
-  #showAll win
-
-  Gtk.main
+main = void $ run App { view         = view'
+                      , update       = update'
+                      , inputs       = []
+                      , initialState = State
+                      }

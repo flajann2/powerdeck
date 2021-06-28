@@ -37,7 +37,10 @@ executables:
     - bytestring
     - Yampa
     - gi-gtk
+    - gi-gtk-declarative
     - haskell-gi-base
+    - text
+    - gi-gtk-declarative-app-simple
     
   test-hid:
     main:                test-hid.hs

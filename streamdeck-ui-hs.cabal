@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: db23b853c1cc947f1e6d98f6886a0181e3c5ba479730ccb1ff31c2bb24f849ae
+-- hash: aee4b57e89f5ce1aea54d208b70b3b6cab93d15310882d19899235c4e782eb81
 
 name:           streamdeck-ui-hs
 version:        0.0.0.0
@@ -60,6 +60,7 @@ executable streamdeck-ui
   build-depends:
       base >=4.7 && <5
     , dbus
+    , gi-gtk
     , streamdeck-ui-hs
   default-language: Haskell2010
 
@@ -89,6 +90,7 @@ executable test-gui
     , base >=4.7 && <5
     , bytestring
     , dbus
+    , gi-gtk
     , hidapi
     , streamdeck-ui-hs
   default-language: Haskell2010

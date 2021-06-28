@@ -37,6 +37,7 @@ executables:
     - bytestring
     - Yampa
     - gi-gtk
+    - haskell-gi-base
     
   test-hid:
     main:                test-hid.hs
@@ -74,7 +75,8 @@ executables:
     - streamdeck-ui-hs
     - dbus
     - gi-gtk
-    
+    - haskell-gi-base
+
   streamdeck-daemon:
     main:                Streamdeck-daemon.hs
     source-dirs:         app

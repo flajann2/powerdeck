@@ -33,7 +33,7 @@
    - Application-specific macro functions (like sending a URL to a browser). This can
      simply be using the raw text as an injection to a %seuence in the command!
 
-*** TODO Features [0/4] 
+*** TODO Features [0/8] 
      + [ ] Global and per-application macrosets
      + [ ] Per login session handling, entailing a daemon and session clients
      + [ ] Root-level command capability for properly-enabled login sessions (Gefahr!!!)
@@ -43,7 +43,17 @@
            one for navigation. But that will be in the hands of the user. How we present
            this visually is an open question. I say we limit the glomming to just 2 or 
            3 streamdecks. But maybe a power user may want to glom 5 or more? So why limit?
-
+     + [ ] Application presets -- drag and droppable into macroset from application specific
+           presets. While we don't want to get into doing this specifically for every
+           Linux application and game out there, we enable the community to do this.
+     + [ ] Chain reactions -- tying multiple keys to a single key? Yes.
+     + [ ] Multistate icons
+     + [ ] Plugin architecture? Streamdeck Windos has
+           https://developer.elgato.com/documentation/stream-deck/sdk/plugin-architecture/
+           which uses websockets for communication. We can also have a plugin architecture
+           that is similar, but do we use Websockets? Or DBus? DBus, bitches!!!
+           We can follow a similar registration architecture. Do we want to use
+           JSON for that? Maybe.
 
 ** Documentation
 

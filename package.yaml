@@ -36,6 +36,23 @@ executables:
     - dbus
     - bytestring
     - Yampa
+    - text
+    - OpenGL
+    - GLFW-b
+
+  test-gui:
+    main:                test-gui.hs
+    source-dirs:         examples
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - streamdeck-ui-hs
+    - hidapi
+    - dbus
+    - bytestring
+    - Yampa
     - gi-gtk
     - gi-gtk-declarative
     - haskell-gi-base

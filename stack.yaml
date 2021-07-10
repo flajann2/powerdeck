@@ -14,3 +14,4 @@ extra-deps:
   - Yampa-0.13.1
   - gi-gtk-declarative-0.7.0
   - gi-gtk-declarative-app-simple-0.7.0
+  #- OpenGL-3.0.3.0

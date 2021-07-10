@@ -4,7 +4,7 @@ resolver: lts-18.0
 allow-newer: true
 
 packages:
-- .
+  - .
 
 extra-deps:
   - reflex-0.8.1.0
@@ -14,4 +14,3 @@ extra-deps:
   - Yampa-0.13.1
   - gi-gtk-declarative-0.7.0
   - gi-gtk-declarative-app-simple-0.7.0
-

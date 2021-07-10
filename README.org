@@ -12,6 +12,39 @@
    Streamdeck, to be more on a par with some of the functionality
    available for it under Windows, at least, and beyond.
 
+** Architecture
+   We shall have macrosets, both default and application-specfic, which will
+   allow users to publish and share their macros with each other. We will tie nothing
+   to the specific serial number of the streamdeck, aside from macroset-streamdeck binding
+   during the initial startup.
+
+   For streamdeck of various sizes, some intelligent way of mapping a macroset from a bigger
+   streamdeck to the smaller one.
+
+   The following button macros and configuration entails:
+   - Image
+   - Caption
+   - CLI Commands 
+   - DBus commands
+   - Keystrokes
+   - ??? page switch (do we want to do it this way? NO)
+   - Brightness
+   - Raw Text (similar to keystrokes, but typable text)
+   - Application-specific macro functions (like sending a URL to a browser). This can
+     simply be using the raw text as an injection to a %seuence in the command!
+
+*** TODO Features [0/4] 
+     + [ ] Global and per-application macrosets
+     + [ ] Per login session handling, entailing a daemon and session clients
+     + [ ] Root-level command capability for properly-enabled login sessions (Gefahr!!!)
+     + [ ] Glomming -- Ability to selectively gang streamdecks together, creating an even bigger
+           virtual streamdeck. Or use them inpedently. One usecase for a virtual
+           glomming is to use a bigger streamdeck for the functionality, and the smaller
+           one for navigation. But that will be in the hands of the user. How we present
+           this visually is an open question. I say we limit the glomming to just 2 or 
+           3 streamdecks. But maybe a power user may want to glom 5 or more? So why limit?
+
+
 ** Documentation
 
 ** Examples

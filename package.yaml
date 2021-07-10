@@ -77,9 +77,14 @@ executables:
     dependencies:
     - streamdeck-ui-hs
     - dbus
+    - bytestring
+    - text
+    - Yampa
     - gi-gtk
+    - gi-gtk-declarative
+    - gi-gtk-declarative-app-simple
     - haskell-gi-base
-
+ 
   streamdeck-daemon:
     main:                Streamdeck-daemon.hs
     source-dirs:         app

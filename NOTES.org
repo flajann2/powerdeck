@@ -12,6 +12,9 @@
    + To allow operation across multiple login accounts
    + To allow for better management of the keys and their icons.
 
+** Renaming to Power Deck
+   I have done some research on the name "Power Deck", and
+   as of this time
 ** Strategy
    We want to rely on a FRP framework. We must select one to best
    suit our needs. Then the rest will flow.   

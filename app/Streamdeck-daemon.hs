@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Main where
 
-import Lib
+import Powerdeck
 
 import Data.List (sort)
 import DBus

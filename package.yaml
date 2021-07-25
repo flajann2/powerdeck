@@ -1,6 +1,6 @@
-name:                streamdeck-ui-hs
+name:                powerdeck
 version:             0.0.0.0
-github:              "flajann2/streamdeck-ui-hs"
+github:              "flajann2/powerdeck"
 license:             MIT
 author:              "Fred Mitchell"
 maintainer:          "fred.mitchell@gmx.de"
@@ -31,7 +31,7 @@ executables:
 #    - -rtsopts
 #    - -with-rtsopts=-N
 #    dependencies:
-#    - streamdeck-ui-hs
+#    - powerdeck 
 #    - hidapi
 #    - dbus
 #    - bytestring
@@ -48,7 +48,7 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - streamdeck-ui-hs
+    - powerdeck 
     - hidapi
     - dbus
     - bytestring
@@ -80,19 +80,19 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - streamdeck-ui-hs
+    - powerdeck
     - hidapi
     - dbus
    
-  streamdeck-ui:
-    main:                Streamdeck-ui.hs
+  powerdeck:
+    main:                Powerdeck-ui.hs
     source-dirs:         app
     ghc-options:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - streamdeck-ui-hs
+    - powerdeck
     - dbus
     - bytestring
     - text
@@ -102,15 +102,15 @@ executables:
     - gi-gtk-declarative-app-simple
     - haskell-gi-base
  
-  streamdeck-daemon:
-    main:                Streamdeck-daemon.hs
+  powerdeck-daemon:
+    main:                Powerdeck-daemon.hs
     source-dirs:         app
     ghc-options:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - streamdeck-ui-hs
+    - powerdeck
     - hidapi
     - dbus
 
@@ -123,4 +123,4 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - streamdeck-ui-hs
+    - powerdeck

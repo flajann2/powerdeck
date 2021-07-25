@@ -48,3 +48,6 @@
     for a change of state, which would be lame. But we need to
     understand that and also work out the FRP bit before
     we start out design/architecture for Haskell.
+*** Let's do the daemon first.
+    Because the GUI part is so annoying right now, I will start
+    on the daemon first 

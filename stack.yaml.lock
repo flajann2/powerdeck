@@ -53,13 +53,6 @@ packages:
       sha256: 06ceda071cbb81f20e41a3ac1d7291d63b040aacce428817c31a6aea8ca94c2d
   original:
     hackage: gi-gtk-declarative-app-simple-0.7.0
-- completed:
-    hackage: OpenGL-3.0.3.0@sha256:811cf7cf2f325bde04efb021ef9b6a86a3b7383583f4bc6471b7a66c56ae889c,7985
-    pantry-tree:
-      size: 11166
-      sha256: 1e7768ac1d08d7bacfd7777de99bf23021504c89b76e910ac79d0d12bf4aad12
-  original:
-    hackage: OpenGL-3.0.3.0
 snapshots:
 - completed:
     size: 585393
